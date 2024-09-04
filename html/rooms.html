@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Booking - Hotel Website</title>
+    <link rel="stylesheet" href="../css/rooms.css">  
+    <script src="../js/rooms.js" defer></script>  
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="rooms.html">Room Booking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Rooms Section -->
+    <section class="rooms">
+        <h1>Our Rooms</h1>
+        <div class="rooms-grid">
+            <!-- Room 1 -->
+            <div class="room">
+                <img src="../images/room1.jpg" alt="Deluxe Room">
+                <h2>Deluxe Room</h2>
+                <p>Enjoy a luxurious stay in our Deluxe Room, complete with modern amenities and a breathtaking view.</p>
+                <p><strong>Price:</strong> $150 per night</p>
+            </div>
+            <!-- Room 2 -->
+            <div class="room">
+                <img src="../images/room2.jpg" alt="Executive Suite">
+                <h2>Executive Suite</h2>
+                <p>Experience ultimate comfort in our Executive Suite, featuring spacious living areas and high-end furnishings.</p>
+                <p><strong>Price:</strong> $250 per night</p>
+            </div>
+            <!-- Room 3 -->
+            <div class="room">
+                <img src="../images/room3.jpg" alt="Standard Room">
+                <h2>Standard Room</h2>
+                <p>Our Standard Room offers a cozy and comfortable stay with all the essential amenities you need.</p>
+                <p><strong>Price:</strong> $100 per night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking">
+        <h1>Book Your Stay</h1>
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="room">Select Room:</label>
+            <select id="room" name="room" required>
+                <option value="">Select Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Executive Suite</option>
+                <option value="standard">Standard Room</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Lanka Hotel. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Pop-Up Message -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>Your booking has been submitted successfully!</p>
+        </div>
+    </div>
+</body>
+</html>
